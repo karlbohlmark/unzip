@@ -1,0 +1,13 @@
+{
+  "name": "unzip",
+  "dependencies": {
+    "karlbohlmark/inflate": "*",
+    "component/dropload": "*"
+  },
+  "scripts": [
+    "zip.js",
+    "unzip.js"
+  ],
+  "version": "0.0.1",
+  "main": "unzip.js"
+}

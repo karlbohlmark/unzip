@@ -1,0 +1,17 @@
+
+
+<div class="dropzone" style="height: 100px;width:300px;background-color:yellow"></div>
+
+<script type="text/javascript" src="build/build.js"></script>
+<script type="text/javascript">
+		var unzip = require('unzip');
+		var dropload = require('dropload');
+		var drop = dropload(document.querySelector('.dropzone'));
+		drop.on('upload', function (e) {
+			console.log(e.file.name);
+		});
+		drop.on('error', function (e) {
+			console.log(e);
+		});		
+</script>
+
