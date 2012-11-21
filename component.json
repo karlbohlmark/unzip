@@ -6,6 +6,7 @@
   },
   "scripts": [
     "zip.js",
+    "mime-types.js",
     "unzip.js"
   ],
   "version": "0.0.1",

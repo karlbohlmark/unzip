@@ -5,9 +5,12 @@
 <script type="text/javascript" src="build/build.js"></script>
 <script type="text/javascript">
 		var unzip = require('unzip');
-		var dropload = require('dropload');
+		var dropload = require('component-dropload');
 		var drop = dropload(document.querySelector('.dropzone'));
 		drop.on('upload', function (e) {
+			unzip(e.file, function (data) {
+				window.dd=data;
+			})
 			console.log(e.file.name);
 		});
 		drop.on('error', function (e) {

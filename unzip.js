@@ -1,3 +1,4 @@
+require('./mime-types');
 var zip = require('./zip');
 
 module.exports = function unzip(blob, cb) {
